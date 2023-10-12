@@ -1,0 +1,17 @@
+# Template PHP Build
+
+# This template allows you to validate your PHP application.
+# The workflow allows running tests and code linting on the default branch.
+
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    master:
+      - parallel:
+        - step:
+            name: Carrsur
+            script:
+              - apt-get update
+              - apt-get -qq install git-ftp
+              - git ftp push -u "$FTP_USERNAME" -p "$FTP_PASSWORD" ftp://avraintegrations.com/public_html/carrsur
