@@ -4,7 +4,7 @@ const { exec } = require('child_process');
 // Define la tarea programada para ejecutar 'npm start' cada hora
 cron.schedule('0 * * * *', () => {
   console.log('Ejecutando npm start...');
-  const child = exec('npm start', {
+  const child = exec('npm run', {
     cwd: './' // Especifica el directorio de trabajo (ruta a tu proyecto)
   });
 
