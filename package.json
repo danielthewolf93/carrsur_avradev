@@ -27,8 +27,8 @@
     "xhr2": "^0.2.1"
   },
   "scripts": {
-    "start": "node ./components/server.js",
-    "run": "node ./scheduler.js"
+    "run": "node ./components/server.js",
+    "start": "node ./scheduler.js"
   },
   "name": "avra-carrsur-api",
   "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
